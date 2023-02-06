@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect, request, session
 
-USER = "naamis"
-PWD = "kakka12"
+USER = "user"
+PWD = "Password"
 app = Flask(__name__, static_folder="css")
 app.secret_key = "4815162342"
 
