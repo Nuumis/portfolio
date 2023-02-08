@@ -24,6 +24,12 @@ def portfolio():
         return render_template("portfolio.html")
     return redirect("/")
 
+@app.route("/aiart")
+def aiart():
+    if session.get("username"):
+        return render_template("aiart.html")
+    return redirect("/")
+
 @app.route("/")
 def landing():
     if session.get("username"):
